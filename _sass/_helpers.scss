@@ -15,6 +15,30 @@
   float: left;
 }
 
+// pads & layouts
+.pad {
+  padding: 40px;
+  @media (max-width: $screen-sm) {
+    padding: 20px;
+  }
+}
+.pad-2x {
+  padding: 80px;
+  @media (max-width: $screen-sm) {
+    padding: 20px;
+  }
+}
+
+// color classes
+.primary {color: $primary; }
+.accent {color: $accent; }
+.black {color: $black; }
+.white {color: $white; }
+.bg-primary {background: $primary; }
+.bg-accent {background: $accent; }
+.bg-black {background: $black; }
+.bg-white {background: $white; }
+
 // clearing
 .container:after,
 .row:after,

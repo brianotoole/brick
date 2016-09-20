@@ -1,0 +1,41 @@
+/* Services
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+#services {
+  display: flex;
+  flex-flow: wrap;
+  margin: 1px auto;
+  width: 100%;
+  background: $border-light;
+}
+.service {
+  padding: 2%;
+  flex: 1 25%; //flex-grow, flex-basis
+  text-align: center;
+  box-sizing: border-box;
+  background: $white;
+  margin: 2px;
+  cursor: pointer;
+  z-index: 1001;
+  transition: 0.3s all ease-in-out;
+  @media (max-width: 768px) {
+    flex: 1 35%;
+  }
+  @media (max-width: 480px) {
+    flex: 1 100%;
+  }
+  svg {
+    width: 30%;
+    stroke: $black;
+  }
+  h3 {
+    color: $black;
+  }
+  &:hover {
+    background: $primary;
+    h3,
+    svg {
+      color: $white;
+      stroke: $white;
+    }
+  }
+}
