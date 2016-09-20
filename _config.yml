@@ -21,4 +21,34 @@ github_username: jekyll
 markdown: kramdown
 
 sass:
-  style: compressed
+  # style: compressed
+  #sass_dir: _assets/css/_sass
+
+gems:
+  - jekyll-assets
+
+assets:
+  compress:
+    css: true
+    js: true
+
+  autowrite: true
+  cache: false
+  #cdn: https://cdn.example.com
+  skip_baseurl_with_cdn: false
+  skip_prefix_with_cdn: false
+  prefix: "/assets"
+  #digest: true
+
+  assets:
+    - "*.png"
+    - "bundle.css"
+
+  sources:
+    - _assets/css
+    - _assets/images
+    - _assets/javascripts
+    - _assets/stylesheets
+    - _assets/fonts
+    - _assets/img
+    - _assets/js
