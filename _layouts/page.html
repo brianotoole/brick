@@ -2,4 +2,22 @@
 layout: default
 ---
 
-{{ content }}
+<div class="section action bg-primary">
+  <div class="container">
+    <div class="row pad-2x">
+      <div class="twelve columns">
+        <h1 class="hero-title white">{{ page.title }}</h1>
+      </div><!--/.columns-->
+    </div><!--/.row-->
+  </div><!--/.container-->
+</div><!--/.action-->
+
+<div class="section page-content">
+  <div class="container">
+    <div class="row">
+      <div class="twelve columns">
+        {{ content }}
+      </div><!--/.columns-->
+    </div><!--/.row-->
+  </div><!--/.container-->
+</div><!--/.page-content-->
