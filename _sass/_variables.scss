@@ -1,0 +1,27 @@
+// Variables
+
+// Colors: Brand
+$primary: #3a3c83; //purple
+$primary-dark: darken($primary,7%);
+$accent: #ff8181; //coral
+$accent-dark: darken($accent,7%);
+
+// Colors: Site
+$body: #444444;
+$black: #231f20;
+$white: #ffffff;
+$border-light: #eeeeee;
+
+// Fonts
+$font-heading: 'Varela Round', Helvetica, Arial, sans-serif;
+$font-body: Verdana, serif;
+
+
+
+// Media Sizes
+$screen-xxs: 400px;
+$screen-xs: 550px;
+$screen-sm: 750px;
+$screen-md: 1000px;
+$screen-lg:1200px;
+$screen-xl: 1550px;
