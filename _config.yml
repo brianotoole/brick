@@ -26,6 +26,7 @@ sass:
 
 gems:
   - jekyll-assets
+  - jekyll-autoprefixer
 
 assets:
   compress:
@@ -49,3 +50,7 @@ assets:
     - _assets/js
     - _assets/img
     - _assets/fonts
+
+autoprefixer:
+  browsers:
+  - last 2 versions

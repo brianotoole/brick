@@ -2,8 +2,11 @@ GEM
   remote: https://rubygems.org/
   specs:
     addressable (2.4.0)
+    autoprefixer-rails (6.3.7)
+      execjs
     colorator (1.1.0)
     concurrent-ruby (1.0.2)
+    execjs (2.7.0)
     extras (0.1.0)
       forwardable-extended (~> 2.5)
     fastimage (2.0.0)
@@ -27,6 +30,8 @@ GEM
       pathutil (>= 0.8)
       rack (> 1, < 2)
       sprockets (~> 3.3, < 3.7)
+    jekyll-autoprefixer (1.0.0)
+      autoprefixer-rails (~> 6.3.6)
     jekyll-sass-converter (1.4.0)
       sass (~> 3.4)
     jekyll-watch (1.5.0)
@@ -56,6 +61,7 @@ PLATFORMS
 DEPENDENCIES
   jekyll (= 3.2.1)
   jekyll-assets
+  jekyll-autoprefixer
 
 RUBY VERSION
    ruby 2.2.0p0
