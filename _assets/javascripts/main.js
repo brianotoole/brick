@@ -1,4 +1,5 @@
-# Vendor
+//Vendor
 #= require vendor/bootstrap
-# Site
+
+//Site
 #= require form-steps
