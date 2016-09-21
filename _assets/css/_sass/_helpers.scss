@@ -1,0 +1,18 @@
+@if $import-helpers == true {
+//-------------------------------------------------------------------
+//  Helpers
+//-------------------------------------------------------------------
+
+// Color classes
+.text-primary {color: $primary;}
+.text-accent {color: $accent;}
+.text-white {color: $white;}
+.bg-primary {background: $primary;}
+.bg-accent {background: $accent;}
+.bg-white {background: $white;}
+
+
+
+//-------------------------------------------------------------------
+// End @if
+}

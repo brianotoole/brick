@@ -2,6 +2,17 @@
 //-------------------------------------------------------------------
 //  Grid system
 // ------------------------------------------------------------------
+
+// Major layout classes
+.container {
+  margin: 0 20px;
+  width: auto;
+  @media(min-width:1310px) {
+    margin: auto;
+    width: 1270px;
+  }
+}
+
 // Since every column has 2% padding (1% on each side) its width is
 // (((its number/12) * 100)-2) percent (truncated, to avoid spillage.)
 // Thus, c12 has width 98%.
