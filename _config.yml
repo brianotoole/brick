@@ -34,7 +34,7 @@ assets:
     js: true
 
   autowrite: true
-  cache: false
+  cache: true
   #cdn: https://cdn.example.com
   skip_baseurl_with_cdn: false
   skip_prefix_with_cdn: false
