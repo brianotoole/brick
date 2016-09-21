@@ -1,22 +1,41 @@
-// Variables
+// ------------------------------------------------------------------
+//  Variables
+// ------------------------------------------------------------------
 
 // Colors: Brand
-$primary: #3a3c83; //purple
-$primary-dark: darken($primary,7%);
-$accent: #00b1aa; //sea green
-$accent-dark: darken($accent,7%);
+$primary:          #3a3c83; //purple
+$primary-dark:     darken($primary,7%);
+$accent:           #00b1aa; //sea green
+$accent-dark:      darken($accent,7%);
 
 // Colors: Site
-$body: #444444;
-$black: #231f20;
-$white: #ffffff;
-$border-light: #eeeeee;
+$color-body:       #444444;
+$color-link:       #444444;
+$color-link-hover: darken($color-link,7%);
+$black:            #231f20;
+$white:            #ffffff;
+$border-light:     #eeeeee;
+
+// Dark Colors
+$c-black:          #000;
+$c-off-black:      #999;
+$c-darker:         #888;
+$c-dark:           #777;
+
+// Medium Colors
+$c-grey-dark:      #aaa;
+$c-grey:           #ccc;
+$c-grey-light:     #eee;
+
+// Light Colors
+$c-white:          #fff;
+
+// Inputs
+$c-focus:          #5ab;
 
 // Fonts
-$font-heading: 'Varela Round', Helvetica, Arial, sans-serif;
-$font-body: Verdana, serif;
-
-
+$font-heading: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+$font-body: $font-heading;
 
 // Media Sizes
 $screen-xxs: 400px;
@@ -25,3 +44,16 @@ $screen-sm: 750px;
 $screen-md: 1000px;
 $screen-lg:1200px;
 $screen-xl: 1550px;
+
+// Mixins
+%no-underline {
+  text-decoration: none;
+}
+// shared large text size
+%txt-large {
+  font-size: 2em;
+}
+// shared smaller text size
+%shared-font-size {
+  font-size: 14px;
+}
