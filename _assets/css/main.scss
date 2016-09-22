@@ -8,13 +8,15 @@
 @import "_sass/base";
 
 // Optional Components; Set to false to exclude
+$import-fonts:     true !default;
 $import-grid:      true !default;
 $import-helpers:   true !default;
 $import-buttons:   true !default;
 $import-forms:     true !default;
-$import-icons:     false !default;
+$import-icons:     true !default;
 
 // Import Components needed based on above
+@import '_sass/fonts';
 @import '_sass/grid';
 @import '_sass/helpers';
 @import '_sass/buttons';

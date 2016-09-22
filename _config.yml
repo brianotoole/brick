@@ -21,7 +21,7 @@ github_username: jekyll
 markdown: kramdown
 
 sass:
-  # style: compressed
+  #style: compressed
   #sass_dir: _assets/css/_sass
 
 gems:
@@ -42,14 +42,11 @@ assets:
   #digest: true
 
   assets:
-    - "*.png"
-    - "bundle.css"
-
-  sources:
-    - _assets/css
-    - _assets/js
-    - _assets/img
-    - _assets/fonts
+    sources:
+      - _assets/css
+      - _assets/js
+      - _assets/img
+      - _assets/fonts
 
 autoprefixer:
   browsers:

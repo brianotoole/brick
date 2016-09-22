@@ -5,20 +5,22 @@
   box-sizing: border-box;
 }
 html {
-  font-smoothing: antialiased;
-  -webkit-font-smoothing: antialiased;
   overflow-x: hidden;
 }
 body {
   position: relative;
   margin: 0;
+  font-size: 16px;
+  line-height: 1.6;
   font-family: $font-body;
   color: $color-body;
+  font-smoothing: antialiased;
+  -webkit-font-smoothing: antialiased;
 }
 // Typography
 h1, h2, h3, h4, h5, h6 {
   font-family: $font-heading;
-  font-weight: 500;
+  font-weight: 700;
 }
 h1 {
   font-size: 3.5em;
@@ -39,7 +41,8 @@ h6 {
   font-size: 0.8em;
 }
 p {
-  font-size: 1em;
+  font-size: 1.1em;
+  margin: 0 0 30px 0;
 }
 a {
   color: $color-link;
@@ -94,7 +97,7 @@ samp {
     text-align: left;
   }
   tbody>*:nth-child(2n-1) {
-    background: $c-grey;
+    background: $color-grey;
     // We use tbody to ensure that we don't shade the heading
   }
 }
