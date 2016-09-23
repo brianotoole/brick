@@ -1,24 +1,21 @@
 ---
 layout: default
-bodyclass: page
+tagline: fjdsakfjdsk fjasdkf
 ---
 
-<div class="section action bg-primary">
-  <div class="container">
-    <div class="row pad-2x">
-      <div class="col c-12">
-        <h1 class="hero-title white">{{ page.title }}</h1>
-      </div><!--/.col-->
-    </div><!--/.row-->
-  </div><!--/.container-->
-</div><!--/.action-->
+<div class="page-interior">
 
-<div class="section page-content">
+<div class="section page-header bg-img overlay pad">
   <div class="container">
     <div class="row">
-      <div class="col c-12">
-        {{ content }}
+      <div class="col c12">
+        <h1 class="page-title">{{ page.title }}<span class="text-primary">.</span></h1>
+        <h4 class="page-tagline">{{ layout.tagline }}</h4>
       </div><!--/.col-->
     </div><!--/.row-->
   </div><!--/.container-->
-</div><!--/.page-content-->
+</div><!--/.section.page-->
+
+{{ content }}
+
+</div><!--/.page-interior-->

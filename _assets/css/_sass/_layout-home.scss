@@ -66,5 +66,8 @@
 // Call to Action
 .action {
   margin: 0 auto;
+  padding: em(60) 0 em(80);
   text-align: center;
+  background: $accent;
+  color: $white;
 }

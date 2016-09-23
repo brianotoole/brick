@@ -23,6 +23,7 @@ markdown: kramdown
 sass:
   #style: compressed
   #sass_dir: _assets/css/_sass
+  sass_dir: _assets
 
 gems:
   - jekyll-assets
@@ -42,11 +43,14 @@ assets:
   #digest: true
 
   assets:
-    sources:
-      - _assets/css
-      - _assets/js
-      - _assets/img
-      - _assets/fonts
+    - "*.png"
+    - "bundle.css"
+
+  sources:
+    - _assets/css
+    - _assets/js
+    - _assets/img
+    - _assets/fonts
 
 autoprefixer:
   browsers:

@@ -7,19 +7,34 @@
 .text-primary {color: $primary;}
 .text-accent {color: $accent;}
 .text-white {color: $white;}
+.text-black {color: $black;}
 .bg-primary {background: $primary;}
 .bg-accent {background: $accent;}
 .bg-white {background: $white;}
+.bg-black {background: $black;}
 
 // Font classes
 .font-heading {font-family: $font-heading;}
 .font-body {font-family: $font-body;}
 .font-cursive {font-family: $font-cursive;}
 
-// pads
-.padded {
-  padding: 50px;
+// pads & layouts
+.pad {
+  padding: em(50);
 }
+.pad-top {
+  padding: em(100) 0 0;
+}
+.pad-bottom {
+  padding: 0 0 em(100);
+}
+.position-center {
+  margin: 0 auto;
+  text-align: center;
+}
+.text-center { text-align: center; }
+.text-left { text-align: left; }
+.text-right { text-align: right; }
 
 //-------------------------------------------------------------------
 // End @if

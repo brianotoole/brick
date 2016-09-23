@@ -64,8 +64,10 @@ $screen-xl: 1550px;
   font-size: 14px;
 }
 
-// convert px to ems; USAGE: font-size: em(20);
-$browser-context: 16; // Default
+// Mixins
+// Converts px to ems;
+// USAGE: font-size: em(20);
+$browser-context: 16; // Default px size = 16
 @function em($pixels, $context: $browser-context) {
   @return #{$pixels/$context}em;
 }
