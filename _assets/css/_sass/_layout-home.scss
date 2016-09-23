@@ -94,3 +94,35 @@
   text-align: center;
   color: $white;
 }
+
+.scroll-it {
+	position: absolute;
+	left: 50%;
+	bottom: 5vh;
+  padding: em(10);
+	display: block;
+	text-align: center;
+	text-decoration: none;
+	text-shadow: 0;
+	width: 25px;
+	height: 25px;
+	border-bottom: 2px solid $white;
+	border-right: 2px solid $white;
+	z-index: 201;
+	transform: translate(-50%, 0%) rotate(45deg);
+	animation: fade_move_down 2s ease-in-out infinite;
+}
+// scrolldown: USAGE: animation: name 1s ease-in-out infinite;
+@keyframes fade_move_down {
+0% {
+  transform: translate(0, -10px) rotate(45deg);
+  opacity: 0;
+}
+50% {
+  opacity: 1;
+}
+100% {
+  transform:translate(0, 10px) rotate(45deg);
+  opacity: 0;
+}
+}
