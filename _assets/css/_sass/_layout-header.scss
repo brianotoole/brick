@@ -1,14 +1,18 @@
 /* Header
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 .header {
-  position: relative;
+  position: absolute;
+  top: 0;
+  left: 0;
   margin: 0;
+  width: 100%;
   text-align: center;
-  //background-color: transparent;
+  background-color: $primary;
+  border-bottom: 2px solid $border-light;
+  z-index: 200;
 }
 .nav {
   padding: 20px 0;
-  border-bottom: 5px solid $border-light;
 }
 .nav-items {
   display: inline-block;
@@ -21,12 +25,12 @@
     margin: 0;
   }
   li a {
-    color: $color-link;
+    color: $white;
     font-size: em(18);
     padding: 0 25px;
     text-decoration: none;
     &:hover {
-      color: $color-link-hover;
+      color: darken($white,15%);
     }
   }
 }

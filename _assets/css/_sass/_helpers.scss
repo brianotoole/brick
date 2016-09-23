@@ -8,19 +8,22 @@
 .text-accent {color: $accent;}
 .text-white {color: $white;}
 .text-black {color: $black;}
+.text-grey {color: $c-grey-light;}
+.text-dark {color: $color-dark;}
 .bg-primary {background: $primary;}
 .bg-accent {background: $accent;}
 .bg-white {background: $white;}
 .bg-black {background: $black;}
+.bg-off-white {background: $off-white;}
 
 // Font classes
 .font-heading {font-family: $font-heading;}
 .font-body {font-family: $font-body;}
 .font-cursive {font-family: $font-cursive;}
 
-// pads & layouts
+// Pads & layouts
 .pad {
-  padding: em(50);
+  padding: em(50) 0;
 }
 .pad-top {
   padding: em(100) 0 0;
@@ -36,6 +39,10 @@
 .text-left { text-align: left; }
 .text-right { text-align: right; }
 
+// Sizings
+.lnr {
+  &.xl { font-size: em(80); }
+}
 //-------------------------------------------------------------------
 // End @if
 }

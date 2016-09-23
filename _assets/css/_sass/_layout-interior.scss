@@ -4,12 +4,28 @@
 // interior body classes
 body {
   &.nav-dark {
-    .nav { background: $black; }
-    .nav-items li a {color: $white; }
+    .nav,
+    .page-header.overlay:after { background: $black;}
+    //.nav-items li a {color: $white; }
   }
+  &.nav-accent {
+    .nav,
+    .page-header.overlay:after { background: $accent;}
+    //.nav-items li a {color: $white; }
+  }
+  &.nav-primary {
+    .nav,
+    .page-header.overlay:after { background: $primary;}
+    //.nav-items li a {color: $white; }
+  }
+}
+// major classes for interior
+.container.half {
+  width: 50%;
 }
 .page-header {
   position: relative;
+  padding: em(150) 0;
   &.bg-img {
     background: url('http://nodivide.imgix.net/content/backgrounds/project-planner-site.jpg') 0 0 no-repeat;
     background-size: cover;
@@ -46,7 +62,13 @@ ul.row {
   list-style: none;
   margin: 0;
   padding: 0;
-  .img-item-lg {
+  + ul.row {
+    .img-item {
+      border-top: 1px solid $border-light;
+      &:last-child {border-right: none;}
+    }
+  }
+  .img-item {
     border-right: 1px solid $border-light;
     &:last-child {border-right: none;}
     img {
@@ -54,13 +76,6 @@ ul.row {
       max-width: 350px;
       margin: 0 auto em(30);
     }
-  }
-  .img-item {
-    border-top: 1px solid $border-light;
-    border-right: 1px solid $border-light;
-    &:last-child {border-right: none;}
-    img {
-      margin: 0 auto em(15);
-    }
+
   }
 }

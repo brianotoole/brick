@@ -19,7 +19,7 @@
       position: absolute;
       width: 100%;
       height: 100%;
-      background-color: $accent;
+      background-color: $primary;
       top: 0;
       left: 0;
       opacity: 0.8;
@@ -38,7 +38,7 @@
     color: $off-white;
     margin: 20px auto;
     @media (min-width: $screen-sm) {
-      margin: 150px auto 0;
+      margin: 225px auto 0;
     }
   }
   .hero-title {
@@ -92,6 +92,5 @@
   margin: 0 auto;
   padding: em(60) 0 em(80);
   text-align: center;
-  background: $accent;
   color: $white;
 }
