@@ -1,31 +1,6 @@
 // ------------------------------------------------------------------
 //  Main sass file
 // ------------------------------------------------------------------
-@charset "utf-8";
 
-// Variables & Settings
 @import "_sass/variables";
-@import "_sass/base";
-
-// Optional Components; Set to false to exclude
-$import-fonts:     true !default;
-$import-grid:      true !default;
-$import-helpers:   true !default;
-$import-buttons:   true !default;
-$import-forms:     true !default;
-$import-icons:     true !default;
-
-// Import Components needed based on above
-@import '_sass/fonts';
-@import '_sass/grid';
-@import '_sass/helpers';
-@import '_sass/buttons';
-@import '_sass/forms';
-@import '_sass/icons';
-
-//Layout
-@import "_sass/layout-header";
-@import "_sass/layout-home";
-@import "_sass/layout-interior";
-@import "_sass/layout-services";
-@import "_sass/layout-quote";
+//@import "_sass/base";

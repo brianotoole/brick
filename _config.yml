@@ -29,29 +29,20 @@ gems:
   - jekyll-assets
   - jekyll-autoprefixer
 
+#
+# jekyll-assets: see more at https://github.com/ixti/jekyll-assets
+#
 assets:
-  compress:
-    css: true
-    js: true
 
-  autowrite: true
-  cache: false
-  #cdn: https://cdn.example.com
-  skip_baseurl_with_cdn: false
-  skip_prefix_with_cdn: false
-  prefix: "/assets"
-  #digest: true
-
-  assets:
-    - "*.png"
-    - "bundle.css"
-
+  dirname: assets
+  baseurl: /assets/
   sources:
     - _assets/css
-    - _assets/js
     - _assets/img
-    - _assets/fonts
-
-autoprefixer:
-  browsers:
-  - last 2 versions
+    - _assets/js
+  js_compressor: uglifier
+  css_compressor: sass
+  cachebust: none
+  cache: false
+  gzip: [ text/css, application/javascript ]
+  debug: false
